@@ -22,6 +22,7 @@ Route::get('/', function () {
 });
 // Route::get('/admin','AdminController@dashboard');
 Route::get('/admin/login', [AuthConroller::class, 'login'])->name('login');
+Route::post('/admin/login', [AuthConroller::class, 'doLogin'])->name('doLogin');
 
 Route::get('/admin', [AdminController::class, 'dashboard'])->name('dashboard');
 
