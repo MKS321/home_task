@@ -8,6 +8,6 @@ class AuthConroller extends Controller
 {
     //
     public function login(){
-        return view('login');
+        return view('admin.login');
     }
 }
