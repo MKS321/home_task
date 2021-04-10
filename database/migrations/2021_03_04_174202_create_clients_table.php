@@ -20,7 +20,7 @@ class CreateClientsTable extends Migration
             $table->integer('phone');
             $table->text('address');
             $table->date('birthday');
-            $table->binary('image');
+            $table->text('image');
            
 
             $table->timestamps();
