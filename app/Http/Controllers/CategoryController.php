@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\SubCat;
 use Illuminate\Http\Request;
+use App\Http\Requests\UserRequest;
 use Redirect;
 class CategoryController extends Controller
 {
@@ -52,6 +53,7 @@ class CategoryController extends Controller
         return view('admin.category.sub.create',compact('data'));
     }
     public function sub_category_store(Request $request){
+        return $request;
         $user = new SubCat;
         if ($request->hasFile('image')) {
             $image = $request->file('image');
