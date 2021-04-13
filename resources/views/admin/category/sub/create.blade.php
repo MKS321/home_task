@@ -42,12 +42,18 @@
                                         @endforeach
                                         
                                    </select>
+                                   @error('cat_id')
+                                    <div class="text-danger">{{ $message }}</div>
+                                    @enderror
                                  </div>
                               </div>
                               <div class="col-md-3 col-lg-6">
                                  <div class="form-group">
                                     <label class="control-label">Sub Cat Name</label>
                                     <input type="text" name="name" class="form-control" />
+                                    @error('name')
+                                    <div class="text-danger">{{ $message }}</div>
+                                    @enderror
                                  </div>
                               </div>
                            </div>

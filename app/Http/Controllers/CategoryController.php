@@ -5,8 +5,8 @@ use App\Models\Category;
 use App\Models\SubCat;
 use Illuminate\Http\Request;
 use Redirect;
-use Validator;
 
+// use App\Http\Requests\CatRequest;
 use App\Http\Requests\CatRequest;
 class CategoryController extends Controller
 {

@@ -24,8 +24,10 @@ class CatRequest extends FormRequest
     public function rules()
     {
         return [
-            //
-            'name'=>'requerd',
+            'name' => 'required',
+            'cat_id' => 'required',
+                
+
         ];
     }
 }
