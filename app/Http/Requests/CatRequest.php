@@ -13,7 +13,7 @@ class CatRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,7 +25,7 @@ class CatRequest extends FormRequest
     {
         return [
             //
-            'name'=>'requerd'
+            'name'=>'requerd',
         ];
     }
 }
